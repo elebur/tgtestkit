@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tgtestkit"
+version = "0.1.0"
+requires-python = ">= 3.10"
+description = "A tool for integration testing and automation of Telegram bots."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = ["telegram", "test", "automation"]
+authors = [
+    {name = "JosXa", email = "info@josxa.dev"}
+]
+maintainers = [
+    {name = "elebur"}
+]
+dependencies = [
+    "telethon",
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Software Development :: Testing",
+    "Typing :: Typed",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff == 0.14.7",
+]
+
+tests = [
+    "pytest == 9.0.1",
+    "python-dotenv == 1.2.1",
+    "pytest-asyncio == 1.3.0",
+    "freezegun == 0.3.4",
+]
+
+[project.urls]
+Homepage = "https://github.com/elebur/tgtestkit"
+# TODO: documentation.
+# Documentation = "https://readthedocs.org"
+Repository = "https://github.com/elebur/tgtestkit"
+Issues = "https://github.com/elebur/tgtestkit/issues"

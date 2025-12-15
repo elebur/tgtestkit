@@ -1,0 +1,22 @@
+[lint]
+select = ["ALL"]
+
+ignore = [
+    "G004", # Logging statement uses f-string
+]
+
+[lint.pydocstyle]
+convention = "pep257"
+
+[lint.per-file-ignores]
+"tests/*" = [
+    "INP001",
+    "D101",
+    "D102",
+    "D103",
+    "ANN201",
+    "ANN001",
+    "S101",
+    "SLF001",
+    "PLR2004"
+]
