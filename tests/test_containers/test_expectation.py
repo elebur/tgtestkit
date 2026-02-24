@@ -1,7 +1,7 @@
 from unittest.mock import Mock, patch
 
 import pytest
-from pyrogram.types import Message
+from telethon.types import Message
 
 from tgtestkit.expectation import Expectation
 from tgtestkit.timeout_settings import TimeoutSettings
